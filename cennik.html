@@ -28,24 +28,28 @@
                 Podaj imię: <input type="text" name="imie" id="id_imie" placeholder="wpisz swoje imię">
                 <fieldset>
                     <legend>Usługa</legend>
-                    Mycie zewnętrzne 30zł <input type="checkbox" name="usluga" value="mycie">
-                    Suszenie 10zł <input type="checkbox" name="usluga" value="suszenie">
-                    Woskowanie 15zł <input type="checkbox" name="usluga" value="woskowanie">
-                    Odkurzanie 10zł <input type="checkbox" name="usluga" value="odkurzanie">
+                    <label>Mycie zewnętrzne 30zł <input type="checkbox" name="usluga" value="mycie" checked disabled></label>
+                    <label>Suszenie 10zł <input type="checkbox" name="usluga" value="suszenie" ></label>
+                    <label>Woskowanie 15zł <input type="checkbox" name="usluga" value="woskowanie"></label>
+                    <label>Odkurzanie 10zł <input type="checkbox" name="usluga" value="odkurzanie"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Rodzaj pojazdu</legend>
                     <select>
-
+                    <option>- Mały</option>
+                    <option>- Średni (+10%)</option>
+                    <option>- Van (+20%)</option>
+                    <option>- Bus (+45%)</option>
                     </select>
                 </fieldset>
                 <fieldset>
                     <legend>Karta stałego klienta</legend>
-                    Brak <input type="radio" name="karta">
-                    Srebrna (-5%)<input type="radio" name="karta">
-                    Złota (-15%)<input type="radio" name="karta">
+                <label>Brak <input type="radio" name="karta" checked></label>
+                <label>Srebrna (-5%)<input type="radio" name="karta"></label>
+                 <label>Złota (-15%)<input type="radio" name="karta"></label>
                 </fieldset>
             </form>
+            <img src="hand_m.jpg" alt="mycie ręczne">
         </main>
 
         <footer>
