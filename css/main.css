@@ -121,6 +121,10 @@ body
     padding: 0.5em;
     margin-bottom: 0.3em;
 }
+.container>main>form>fieldset>label
+{
+    margin:0.3em;
+}
 .container>main>img
 {
     flex-basis: 30%;
