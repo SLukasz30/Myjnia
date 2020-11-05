@@ -44,13 +44,45 @@ body
 .container>header>nav
 {
     flex-basis: 30%;
+    display:flex;
+    justify-content: space-between;
    
+}
+.container>header>nav>ul
+{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 40%;
 }
 .container>header>nav>ul>li
 {
     width:8em;
     padding:0.8em;
     border-radius: 0.8em;
+    text-decoration: none;
+    display:block;
+    
+}
+.container>header>nav>ul>li:nth-of-type(2)
+{
+    color:hsl(240, 50%, 90%);
+    background-color: hsl(240, 50%, 50%);
+}
+.container>header>nav>ul>li>a
+{
+    text-decoration: none;
+    
+    
+    
+
+}
+.container>header>nav>ul>li:nth-of-type(1)
+{
+    background-color:hsl(240, 50%, 90%);
+    color: hsl(240, 50%, 50%);
+    d
 
 }
 .container>header>ul
