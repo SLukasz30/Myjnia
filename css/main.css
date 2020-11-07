@@ -21,6 +21,7 @@ body
     margin:auto;
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container>header
 {
@@ -48,24 +49,51 @@ body
 .container>header>nav
 {
     flex-basis: 30%;
+    
 }
 .container>header>nav>ul
 {
     height:100%;
     display:flex;
     align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
 }
 .container>header>nav>ul>li
 {
-    width:8em;
-    padding: 0.8em;
-    border-radius: 0.8em;
-
+    flex-basis: 40%;
 }
+
 .container>header>nav>ul>li>a
 {
     text-decoration: none;
+    display:block;
+    width:8em;
+    padding: 0.8em;
+    text-align: center
+
 }
+.container>header>nav>ul>li:nth-of-type(1)
+{
+    background: var(--bialy);
+    border-radius: 0.8em;
+}
+.container>header>nav>ul>li:nth-of-type(2)
+{
+    background: var(--niebieski);
+    border-radius: 0.8em;
+}
+.container>header>nav>ul>li:nth-of-type(2)>*
+{
+    color: var(--bialy);
+}
+
+.container>header>nav>ul>li:nth-of-type(1)>*
+{
+    color: var(--niebieski);
+}
+
+
 
 .container>main
 {
@@ -73,6 +101,35 @@ body
     border-radius: 1em;
     background-color: var(--bialy);
     box-shadow: 0 0 5px 0 var(--niebieski);
+    flex-basis: 60%;
+    line-height: 2em;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container>main>h2
+{
+    font-weight: bold;
+    flex-basis: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.container>main>form
+{
+    flex-basis: 55%;
+}
+.container>main>form>fieldset:nth-of-type(1),.container>main>form>fieldset:nth-of-type(3)
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container>main>.zdjecie
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .container>aside
@@ -81,23 +138,16 @@ body
     border-radius: 1em;
     background-color: var(--bialy);
     box-shadow: 0 0 5px 0 var(--niebieski);
+    flex-basis: 30%;
+    order:2;
 }
-
-.container>main
-{
-
-}
-.container>aside
-{
-    
-}
-
 .container>footer
 {
     height:100px;
     border:1px solid var(--niebieski);
     border-radius: 1em;
     flex-basis: 100%;
+    order:3;
 }
 .container>footer>span
 {
