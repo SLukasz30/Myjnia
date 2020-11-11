@@ -167,6 +167,10 @@ body
     border-radius: 1em;
     flex-basis: 100%;
     order:3;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .container>footer>span
 {
@@ -175,3 +179,8 @@ body
     color: var(--czerwony);
 }
 
+#id_imie
+{
+    margin-top:0.5em;
+    height:20px;
+}
