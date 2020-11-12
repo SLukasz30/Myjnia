@@ -39,6 +39,7 @@ body
     text-transform: capitalize;
     word-spacing: 0.3em;
     flex-basis: 70%;
+    font-variant: small-caps;
 }
 .container>header>h1>span
 {
