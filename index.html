@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Łukasz Serich">
+    <title>Cennik</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Myjnia ręczna <span> Błysk</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cennik.html">Cennik</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <h3>Rezerwacja na godzinę</h3>
+            <p>Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj mycie pojazdu na konkretną godzinę</p>
+        </aside>
+        <main>
+            <h2>Oblicz koszt usługi</h2>
+            <form>
+                Podaj imię: <input type="text" name="imie" id="id_imie" placeholder="wpisz swoje imię" >
+                <fieldset>
+                    <legend>Usługa</legend>
+                    <label>Mycie zewnętrzne 30zł <input type="checkbox" name="usluga" value="mycie" checked disabled></label>
+                    <label>Suszenie 10zł <input type="checkbox" name="usluga" value="suszenie" ></label>
+                    <label>Woskowanie 15zł <input type="checkbox" name="usluga" value="woskowanie"></label>
+                    <label>Odkurzanie 10zł <input type="checkbox" name="usluga" value="odkurzanie"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rodzaj pojazdu</legend>
+                    <select>
+                    <option>- Mały</option>
+                    <option>- Średni (+10%)</option>
+                    <option>- Van (+20%)</option>
+                    <option>- Bus (+45%)</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Karta stałego klienta</legend>
+                <label>Brak <input type="radio" name="karta" checked></label>
+                <label>Srebrna (-5%)<input type="radio" name="karta"></label>
+                 <label>Złota (-15%)<input type="radio" name="karta"></label>
+                </fieldset>
+                <input type="reset" value="Wyczyść" class="przyciski">
+                <input type="submit" value="Oblicz" class="przyciski">
+            </form>
+            <div class="zdjecie"><img src="hand_m.jpg" alt="mycie ręczne"></div>
+            <span class="koszt"> Koszt usługi:</span>
+        </main>
+
+        <footer>
+            <span>Łukasz Serich</span> 2P
+        </footer>
+    </div>
+
+</body>
+</html>
